@@ -112,6 +112,6 @@ And evaluation proceeds by running:
 
     perl scripts/multi-bleu.perl /path/to/newstest2015.tc.de < newstest2015.de.trans
 
-For Chinese-English evaluation, run following command on nist test set:
+For Chinese-English evaluation with case-insensitive BLEU, run following command on nist test set:
     
-    perl scripts/multi-bleu.perl /path/to/nist0?.ref? < nist0?.src.trans
+    perl scripts/multi-bleu.perl -lc /path/to/nist03.ref? < nist03.src.trans
